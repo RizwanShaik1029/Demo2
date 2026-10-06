@@ -15,7 +15,7 @@ public class User {
     @GetMapping("/hello")
     public String sayHiello(@RequestParam String name)
     {
-        return "Hi "+name;
+        return "Hello "+name;
     }
 
 }
