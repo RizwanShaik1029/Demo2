@@ -7,8 +7,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class User {
 
-    @GetMapping()
+    @GetMapping("/hi")
     public String sayHi(@RequestParam String name)
+    {
+        return "Hi "+name;
+    }
+    @GetMapping("/hello")
+    public String sayHiello(@RequestParam String name)
     {
         return "Hi "+name;
     }
